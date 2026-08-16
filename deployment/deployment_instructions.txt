@@ -1,0 +1,337 @@
+
+HealthTrack Final System Deployment Instructions
+
+
+Project:
+HealthTrack Healthcare Monitoring System
+
+
+Technology Stack:
+
+Backend:
+FastAPI + SQLAlchemy + MySQL
+
+Frontend:
+Dash + Plotly
+
+Machine Learning:
+Scikit-learn Random Forest Model
+
+1. System Requirements
+
+
+Required Software:
+
+Python 3.10+
+
+MySQL 8.0+
+
+Git
+
+
+Required Python Packages:
+
+
+FastAPI
+
+Uvicorn
+
+SQLAlchemy
+
+PyMySQL
+
+Pydantic
+
+Dash
+
+Plotly
+
+Scikit-learn
+
+Pandas
+
+Joblib
+
+
+2. Database Setup
+
+
+Step 1:
+
+Open MySQL command line.
+
+
+Step 2:
+
+Execute:
+
+
+mysql -u root -p < database_setup.sql
+
+
+
+Step 3:
+
+Verify database:
+
+
+SHOW DATABASES;
+
+
+USE HealthTrackDB;
+
+
+SHOW TABLES;
+
+
+3. Backend Installation
+
+
+Navigate to backend folder:
+
+
+cd backend
+
+
+
+Create virtual environment:
+
+
+python -m venv venv
+
+
+
+Activate environment:
+
+
+Windows:
+
+venv\Scripts\activate
+
+
+Linux/Mac:
+
+source venv/bin/activate
+
+
+
+Install dependencies:
+
+
+pip install -r requirements.txt
+
+4. Start FastAPI Backend
+
+
+Run:
+
+
+uvicorn app.main:app --reload
+
+
+
+Backend URL:
+
+
+http://127.0.0.1:8000
+
+
+
+Swagger API Documentation:
+
+
+http://127.0.0.1:8000/docs
+
+
+5. Start Dashboard
+
+
+Open another terminal.
+
+
+Navigate:
+
+
+cd dashboard
+
+
+
+Install dashboard packages:
+
+
+pip install dash plotly dash-bootstrap-components
+
+
+
+Run dashboard:
+
+
+python app.py
+
+
+
+Dashboard URL:
+
+
+http://127.0.0.1:8050
+
+
+6. Machine Learning Model Setup
+
+
+Navigate:
+
+
+cd risk-assessment
+
+
+
+Train model:
+
+
+python train_model.py
+
+
+
+Generated model:
+
+
+risk_model.pkl
+
+
+
+The backend loads this model for:
+
+- Risk prediction
+- Risk classification
+- Health recommendations
+
+
+7. Testing System
+
+
+Backend API Testing:
+
+Swagger UI
+
+
+Test:
+
+- User registration
+- Login
+- Vital submission
+- Alert generation
+- Risk assessment
+- Report generation
+
+
+
+Dashboard Testing:
+
+Verify:
+
+- Live vital updates
+- Charts
+- Alerts
+- Sensor status
+
+8. Default Test Credentials
+
+
+Administrator:
+
+Username:
+
+admin
+
+
+Email:
+
+admin@healthtrack.com
+
+
+
+Patient:
+
+Username:
+
+john_patient
+
+
+Email:
+
+john@healthtrack.com
+
+
+
+(Passwords are mock credentials for demonstration)
+
+9. Troubleshooting
+
+
+Problem:
+
+Database connection failed
+
+
+Solution:
+
+Check:
+
+- MySQL service running
+- Database credentials
+- configuration.env values
+
+
+
+-----------------------------------------------
+
+
+Problem:
+
+Dashboard not loading
+
+
+Solution:
+
+Check:
+
+- Backend running
+- Required packages installed
+- Port 8050 available
+
+
+
+-----------------------------------------------
+
+
+Problem:
+
+Machine learning prediction error
+
+
+Solution:
+
+Verify:
+
+- risk_model.pkl exists
+- Dataset is available
+- Required ML libraries installed
+
+10. Future Deployment Recommendations
+
+
+Recommended production improvements:
+
+
+- Docker container deployment
+
+- Cloud database migration
+
+- Redis caching
+
+- HTTPS configuration
+
+- Kubernetes scaling
+
+- Automated CI/CD pipeline

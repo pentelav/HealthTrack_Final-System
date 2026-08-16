@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+python-multipart
+scikit-learn
+pandas
+numpy
+joblib
+matplotlib
+plotly
+dash
+dash-bootstrap-components
+websockets
+pytest
+httpx
+python-dotenv

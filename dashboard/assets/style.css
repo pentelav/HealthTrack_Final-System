@@ -1,0 +1,283 @@
+
+
+/* Main page */
+body {
+
+    background: #f4f8fb;
+
+    font-family:
+
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+}
+
+
+
+/* Dashboard container */
+
+.container-fluid {
+
+    padding: 25px;
+
+}
+
+
+
+/* Header */
+
+.header {
+
+    text-align: center;
+
+    color: #0b3954;
+
+    font-size: 36px;
+
+    font-weight: bold;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* Connection status */
+
+#connection {
+
+    background: white;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+
+    box-shadow:
+
+        0 4px 10px rgba(0,0,0,0.08);
+
+}
+
+
+
+/* Cards */
+
+.card {
+
+    border-radius: 15px;
+
+    border: none;
+
+    background: white;
+
+    box-shadow:
+
+        0 5px 15px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+
+}
+
+
+
+.card:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
+
+/* Card title */
+
+.card-title {
+
+    color: #0b3954;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+}
+
+
+
+/* Vital values */
+
+.card-text {
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+    color: #087e8b;
+
+}
+
+
+
+/* Chart */
+
+#heart-chart {
+
+    background: white;
+
+    border-radius: 15px;
+
+    margin-top: 25px;
+
+    padding: 10px;
+
+    box-shadow:
+
+        0 5px 15px rgba(0,0,0,0.08);
+
+}
+
+
+
+/* Alert section */
+
+h3 {
+
+    margin-top: 30px;
+
+    color: #0b3954;
+
+    font-weight: bold;
+
+}
+
+
+
+/* Alert cards */
+
+.alert-box {
+
+    padding: 15px;
+
+    margin: 10px 0;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+}
+
+
+
+/* Critical alert */
+
+.critical {
+
+    background: #ff4d4d;
+
+    color:white;
+
+}
+
+
+
+/* High alert */
+
+.high {
+
+    background:#ff9800;
+
+    color:white;
+
+}
+
+
+
+/* Normal status */
+
+.normal {
+
+    background:#28a745;
+
+    color:white;
+
+}
+
+
+
+/* Risk dashboard */
+
+.risk-card {
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    box-shadow:
+
+        0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+
+
+/* Risk score */
+
+.risk-score {
+
+    font-size:40px;
+
+    font-weight:bold;
+
+    color:#d9534f;
+
+}
+
+
+
+/* Recommendation list */
+
+.recommendation {
+
+    background:white;
+
+    padding:12px;
+
+    margin:8px 0;
+
+    border-radius:8px;
+
+    border-left:
+
+        5px solid #087e8b;
+
+}
+
+
+
+/* Mobile support */
+
+@media(max-width:768px){
+
+
+    .header{
+
+        font-size:26px;
+
+    }
+
+
+    .card-text{
+
+        font-size:24px;
+
+    }
+
+
+}
